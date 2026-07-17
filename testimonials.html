@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials — Kitoko Hearth</title>
+  <meta name="description" content="Hear directly from Kitoko Hearth students about their experience learning to build with technology.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav-container" aria-label="Primary">
+      <a href="index.html" class="nav-logo" aria-label="Kitoko Hearth home">
+        <svg class="logo-mark" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M17 3C17 3 9 11.5 9 18.5C9 23.7 12.6 28 17 28C21.4 28 25 23.7 25 18.5C25 15.8 23.3 12.9 21.6 10.6C21.9 12.4 21.4 13.9 20.3 14.8C20.6 11.6 18.9 8.3 17 3Z" fill="url(#emberGradient)"/>
+          <defs><linearGradient id="emberGradient" x1="9" y1="3" x2="25" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#D89A2B"/><stop offset="1" stop-color="#4A2412"/></linearGradient></defs>
+        </svg>
+        <span class="logo-text">Kitoko Hearth</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="programs.html" class="nav-link">Programs</a></li>
+        <li><a href="projects.html" class="nav-link">Student Projects</a></li>
+        <li><a href="testimonials.html" class="nav-link is-active">Testimonials</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="join.html" class="nav-link nav-cta">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container" data-reveal>
+        <p class="eyebrow">Testimonials</p>
+        <h1>In their own words</h1>
+        <p class="page-hero-lede">Every cohort brings new stories. Here are a few from the students who've come before.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <h2 class="sr-only" id="testimonials-heading">Student testimonials</h2>
+
+        <div class="testimonial-carousel" data-reveal>
+          <div class="testimonial-track" id="testimonial-track">
+            <blockquote class="testimonial-slide is-active">
+              <p>"I came in not knowing what a div was. Six weeks later I'd built and shipped my own landing page. I still can't believe it was me who made that."</p>
+              <footer>
+                <span class="testimonial-avatar">A</span>
+                <span><span class="testimonial-name">Amara O.</span><span class="testimonial-role">Foundations Program, Cohort 3</span></span>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-slide">
+              <p>"The mentors never made me feel behind. They just kept showing me the next small step until, suddenly, I'd built a whole game."</p>
+              <footer>
+                <span class="testimonial-avatar">D</span>
+                <span><span class="testimonial-name">Diallo K.</span><span class="testimonial-role">Foundations Program, Cohort 2</span></span>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-slide">
+              <p>"Kitoko Hearth felt like the first place that treated my curiosity as an asset instead of a distraction."</p>
+              <footer>
+                <span class="testimonial-avatar">N</span>
+                <span><span class="testimonial-name">Naledi M.</span><span class="testimonial-role">Foundations Program, Cohort 3</span></span>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-slide">
+              <p>"My favorite part wasn't even the code — it was Demo Day, showing my family something I built with my own hands."</p>
+              <footer>
+                <span class="testimonial-avatar">T</span>
+                <span><span class="testimonial-name">Tendai R.</span><span class="testimonial-role">Foundations Program, Cohort 1</span></span>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-slide">
+              <p>"I joined for the coding. I stayed for the community. Two years later, I'm mentoring the next cohort myself."</p>
+              <footer>
+                <span class="testimonial-avatar">S</span>
+                <span><span class="testimonial-name">Sena A.</span><span class="testimonial-role">Foundations Program, Cohort 1 &amp; Mentor</span></span>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="testimonial-controls">
+            <button class="testimonial-btn" id="testimonial-prev" aria-label="Previous testimonial">←</button>
+            <div class="testimonial-dots" id="testimonial-dots" role="tablist" aria-label="Testimonials"></div>
+            <button class="testimonial-btn" id="testimonial-next" aria-label="Next testimonial">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" aria-labelledby="testimonials-cta-heading">
+      <div class="container final-cta-inner" data-reveal>
+        <h2 id="testimonials-cta-heading">Write your own story</h2>
+        <p>Applications for the next cohort are open now.</p>
+        <a href="join.html" class="btn btn-gold">Join the Next Cohort</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <svg class="logo-mark" width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M17 3C17 3 9 11.5 9 18.5C9 23.7 12.6 28 17 28C21.4 28 25 23.7 25 18.5C25 15.8 23.3 12.9 21.6 10.6C21.9 12.4 21.4 13.9 20.3 14.8C20.6 11.6 18.9 8.3 17 3Z" fill="url(#footerEmberGradient)"/>
+            <defs><linearGradient id="footerEmberGradient" x1="9" y1="3" x2="25" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#D89A2B"/><stop offset="1" stop-color="#F8F5F0"/></linearGradient></defs>
+          </svg>
+          <span class="logo-text logo-text-light">Kitoko Hearth</span>
+        </a>
+        <p class="footer-tagline">A home for young people to learn technology by building it.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="projects.html">Student Projects</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-links" aria-label="Footer get involved">
+        <h3>Get Involved</h3>
+        <ul>
+          <li><a href="join.html">Join Kitoko Hearth</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h3>Stay Connected</h3>
+        <a href="mailto:hello@kitokohearth.org" class="footer-email">hello@kitokohearth.org</a>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="#" aria-label="Kitoko Hearth on Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Kitoko Hearth on X"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+          <a href="#" aria-label="Kitoko Hearth on LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.6"/><circle cx="7.5" cy="7.5" r="1.2" fill="currentColor"/><path d="M7.5 11v7M12 11v7M12 13.5c0-1.5 1.2-2.5 2.5-2.5s2.5 1 2.5 2.5V18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year"></span> Kitoko Hearth. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitoko Hearth — Learn Technology by Building It</title>
+  <meta name="description" content="Kitoko Hearth helps young people learn technology through practical, project-based learning. Join a cohort, build real projects, grow real skills.">
+
+  <!-- Fonts: Fraunces (display) + Plus Jakarta Sans (body/UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container" aria-label="Primary">
+      <a href="index.html" class="nav-logo" aria-label="Kitoko Hearth home">
+        <svg class="logo-mark" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M17 3C17 3 9 11.5 9 18.5C9 23.7 12.6 28 17 28C21.4 28 25 23.7 25 18.5C25 15.8 23.3 12.9 21.6 10.6C21.9 12.4 21.4 13.9 20.3 14.8C20.6 11.6 18.9 8.3 17 3Z" fill="url(#emberGradient)"/>
+          <defs>
+            <linearGradient id="emberGradient" x1="9" y1="3" x2="25" y2="28" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#D89A2B"/>
+              <stop offset="1" stop-color="#4A2412"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">Kitoko Hearth</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link is-active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="programs.html" class="nav-link">Programs</a></li>
+        <li><a href="projects.html" class="nav-link">Student Projects</a></li>
+        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="join.html" class="nav-link nav-cta">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Project-based tech education for young people</p>
+          <h1 class="hero-heading">
+            Learn by building.<br>
+            <span class="text-accent">Grow</span> by doing.
+          </h1>
+          <p class="hero-subtext">
+            Kitoko Hearth is a home for young people to learn real technology skills — not through lectures, but by shipping real projects alongside a community that believes in them.
+          </p>
+          <div class="hero-actions">
+            <a href="join.html" class="btn btn-primary">Join the Next Cohort</a>
+            <a href="programs.html" class="btn btn-secondary">Explore Programs</a>
+          </div>
+          <div class="hero-stats" role="list">
+            <div class="hero-stat" role="listitem">
+              <span class="hero-stat-num">100%</span>
+              <span class="hero-stat-label">Project-based curriculum</span>
+            </div>
+            <div class="hero-stat" role="listitem">
+              <span class="hero-stat-num">0</span>
+              <span class="hero-stat-label">Cost of entry to apply</span>
+            </div>
+            <div class="hero-stat" role="listitem">
+              <span class="hero-stat-num">1</span>
+              <span class="hero-stat-label">Supportive community, always</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <svg class="ember-thread" viewBox="0 0 420 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="emberPath" d="M40 480C120 460 100 380 180 360C260 340 240 250 320 220C380 196 340 120 380 40"
+              stroke="url(#threadGradient)" stroke-width="3" stroke-linecap="round" stroke-dasharray="900" stroke-dashoffset="900"/>
+            <circle cx="40" cy="480" r="7" fill="#D89A2B"/>
+            <circle cx="180" cy="360" r="5" fill="#D89A2B" opacity="0.8"/>
+            <circle cx="320" cy="220" r="5" fill="#D89A2B" opacity="0.8"/>
+            <circle cx="380" cy="40" r="9" fill="#4A2412"/>
+            <defs>
+              <linearGradient id="threadGradient" x1="40" y1="480" x2="380" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D89A2B"/>
+                <stop offset="1" stop-color="#4A2412"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="hero-card hero-card-1">
+            <span class="hero-card-icon">🖥️</span>
+            <p>Built a landing page in week 2</p>
+          </div>
+          <div class="hero-card hero-card-2">
+            <span class="hero-card-icon">🎮</span>
+            <p>Shipped a memory game with a partner</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE KITOKO HEARTH ============ -->
+    <section class="section" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Why choose Kitoko Hearth</p>
+          <h2 id="why-heading">A hearth, not a classroom</h2>
+          <p class="section-lede">We believe young people learn best when they're building something real, guided by people who care whether they finish — and whether they thrive.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true">🔨</div>
+            <h3>Learn by building</h3>
+            <p>Every lesson leads to something tangible — a page, a game, a tool — not just notes in a notebook.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true">🤝</div>
+            <h3>A real community</h3>
+            <p>Small cohorts, dedicated mentors, and peers who become collaborators — and often, lifelong friends.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true">🌱</div>
+            <h3>Built for beginners</h3>
+            <p>No experience required — just curiosity. We meet every student exactly where they are.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true">🎯</div>
+            <h3>Real-world skills</h3>
+            <p>HTML, CSS, JavaScript, and problem-solving habits that carry into any career in tech.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT PREVIEW ============ -->
+    <section class="section section-alt" aria-labelledby="about-preview-heading">
+      <div class="container split-grid">
+        <div class="split-visual" data-reveal aria-hidden="true">
+          <div class="story-frame">
+            <div class="story-frame-glow"></div>
+            <p class="story-quote">"We're not building better test-takers. We're building people who ship."</p>
+          </div>
+        </div>
+        <div class="split-copy" data-reveal>
+          <p class="eyebrow">Our story</p>
+          <h2 id="about-preview-heading">Started around a simple hearth, and a simple idea</h2>
+          <p>Kitoko Hearth began with a small group of young people who wanted more than theory — they wanted to build things that worked, and see them out in the world. That idea grew into a program, then a community, then a home for anyone ready to learn technology the way it's actually practiced.</p>
+          <a href="about.html" class="link-arrow">Read our full story <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAMS PREVIEW ============ -->
+    <section class="section" aria-labelledby="programs-preview-heading">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Programs</p>
+          <h2 id="programs-preview-heading">Start with the Foundations Program</h2>
+          <p class="section-lede">A guided, project-based path into web technology — designed for complete beginners and built around momentum.</p>
+        </div>
+
+        <div class="program-highlight" data-reveal>
+          <div class="program-highlight-body">
+            <h3>Foundations Program</h3>
+            <p>Twelve weeks of hands-on learning across HTML, CSS, and JavaScript. Every week ends with a project you can show off — not a quiz you forget.</p>
+            <ul class="check-list">
+              <li>Small, mentor-led cohorts</li>
+              <li>Real projects from week one</li>
+              <li>No cost, no experience required</li>
+            </ul>
+            <a href="programs.html" class="btn btn-primary">See the Curriculum</a>
+          </div>
+          <div class="program-highlight-visual" aria-hidden="true">
+            <div class="code-window">
+              <div class="code-window-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <pre class="code-window-body"><code>&lt;section class="hearth"&gt;
+  &lt;h1&gt;Hello, world.&lt;/h1&gt;
+  &lt;p&gt;I built this.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STUDENT PROJECTS PREVIEW ============ -->
+    <section class="section section-alt" aria-labelledby="projects-preview-heading">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Student projects</p>
+          <h2 id="projects-preview-heading">What our students have built</h2>
+          <p class="section-lede">Real projects, built by real students, during real cohorts.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-reveal>
+            <div class="project-thumb project-thumb-1" aria-hidden="true">
+              <span class="project-thumb-emoji">🌐</span>
+            </div>
+            <div class="project-card-body">
+              <h3>Landing Pages</h3>
+              <p>Clean, responsive landing pages designed and coded from scratch — the first real project every student ships.</p>
+              <a href="projects.html" class="btn btn-outline btn-small">View Project</a>
+            </div>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-thumb project-thumb-2" aria-hidden="true">
+              <span class="project-thumb-emoji">🧠</span>
+            </div>
+            <div class="project-card-body">
+              <h3>Memory Match Game</h3>
+              <p>An interactive JavaScript game built to practice logic, state, and delightful little animations.</p>
+              <a href="projects.html" class="btn btn-outline btn-small">View Project</a>
+            </div>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-thumb project-thumb-3" aria-hidden="true">
+              <span class="project-thumb-emoji">✨</span>
+            </div>
+            <div class="project-card-body">
+              <h3>More, every cohort</h3>
+              <p>Every new cohort ships new work. This gallery grows term after term — come see what's next.</p>
+              <a href="projects.html" class="btn btn-outline btn-small">View Project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS PREVIEW ============ -->
+    <section class="section" aria-labelledby="testimonials-preview-heading">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Testimonials</p>
+          <h2 id="testimonials-preview-heading">In their own words</h2>
+        </div>
+
+        <div class="testimonial-carousel" data-reveal>
+          <div class="testimonial-track" id="testimonial-track">
+            <blockquote class="testimonial-slide is-active">
+              <p>"I came in not knowing what a div was. Six weeks later I'd built and shipped my own landing page. I still can't believe it was me who made that."</p>
+              <footer>
+                <span class="testimonial-avatar">A</span>
+                <span>
+                  <span class="testimonial-name">Amara O.</span>
+                  <span class="testimonial-role">Foundations Program, Cohort 3</span>
+                </span>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-slide">
+              <p>"The mentors never made me feel behind. They just kept showing me the next small step until, suddenly, I'd built a whole game."</p>
+              <footer>
+                <span class="testimonial-avatar">D</span>
+                <span>
+                  <span class="testimonial-name">Diallo K.</span>
+                  <span class="testimonial-role">Foundations Program, Cohort 2</span>
+                </span>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-slide">
+              <p>"Kitoko Hearth felt like the first place that treated my curiosity as an asset instead of a distraction."</p>
+              <footer>
+                <span class="testimonial-avatar">N</span>
+                <span>
+                  <span class="testimonial-name">Naledi M.</span>
+                  <span class="testimonial-role">Foundations Program, Cohort 3</span>
+                </span>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="testimonial-controls">
+            <button class="testimonial-btn" id="testimonial-prev" aria-label="Previous testimonial">←</button>
+            <div class="testimonial-dots" id="testimonial-dots" role="tablist" aria-label="Testimonials"></div>
+            <button class="testimonial-btn" id="testimonial-next" aria-label="Next testimonial">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="final-cta" aria-labelledby="final-cta-heading">
+      <div class="container final-cta-inner" data-reveal>
+        <h2 id="final-cta-heading">Ready to build something real?</h2>
+        <p>Applications for the next cohort are open now. No experience needed — just curiosity and a willingness to try.</p>
+        <a href="join.html" class="btn btn-gold">Join the Next Cohort</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <svg class="logo-mark" width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M17 3C17 3 9 11.5 9 18.5C9 23.7 12.6 28 17 28C21.4 28 25 23.7 25 18.5C25 15.8 23.3 12.9 21.6 10.6C21.9 12.4 21.4 13.9 20.3 14.8C20.6 11.6 18.9 8.3 17 3Z" fill="url(#footerEmberGradient)"/>
+            <defs>
+              <linearGradient id="footerEmberGradient" x1="9" y1="3" x2="25" y2="28" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D89A2B"/>
+                <stop offset="1" stop-color="#F8F5F0"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="logo-text logo-text-light">Kitoko Hearth</span>
+        </a>
+        <p class="footer-tagline">A home for young people to learn technology by building it.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="projects.html">Student Projects</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-links" aria-label="Footer get involved">
+        <h3>Get Involved</h3>
+        <ul>
+          <li><a href="join.html">Join Kitoko Hearth</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h3>Stay Connected</h3>
+        <a href="mailto:hello@kitokohearth.org" class="footer-email">hello@kitokohearth.org</a>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="#" aria-label="Kitoko Hearth on Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Kitoko Hearth on X">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#" aria-label="Kitoko Hearth on LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.6"/><circle cx="7.5" cy="7.5" r="1.2" fill="currentColor"/><path d="M7.5 11v7M12 11v7M12 13.5c0-1.5 1.2-2.5 2.5-2.5s2.5 1 2.5 2.5V18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year"></span> Kitoko Hearth. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

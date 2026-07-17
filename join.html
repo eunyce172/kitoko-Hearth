@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Kitoko Hearth</title>
+  <meta name="description" content="Apply to the next Kitoko Hearth cohort. No experience required — just curiosity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav-container" aria-label="Primary">
+      <a href="index.html" class="nav-logo" aria-label="Kitoko Hearth home">
+        <svg class="logo-mark" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M17 3C17 3 9 11.5 9 18.5C9 23.7 12.6 28 17 28C21.4 28 25 23.7 25 18.5C25 15.8 23.3 12.9 21.6 10.6C21.9 12.4 21.4 13.9 20.3 14.8C20.6 11.6 18.9 8.3 17 3Z" fill="url(#emberGradient)"/>
+          <defs><linearGradient id="emberGradient" x1="9" y1="3" x2="25" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#D89A2B"/><stop offset="1" stop-color="#4A2412"/></linearGradient></defs>
+        </svg>
+        <span class="logo-text">Kitoko Hearth</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="programs.html" class="nav-link">Programs</a></li>
+        <li><a href="projects.html" class="nav-link">Student Projects</a></li>
+        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="join.html" class="nav-link nav-cta is-active">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container" data-reveal>
+        <p class="eyebrow">Join Kitoko Hearth</p>
+        <h1>Come build something real</h1>
+        <p class="page-hero-lede">Applications for the next Foundations Program cohort are open. It takes five minutes to apply — no experience necessary.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="benefits-heading">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">What you'll get</p>
+          <h2 id="benefits-heading">Benefits of joining</h2>
+        </div>
+        <div class="values-grid">
+          <article class="value-card" data-reveal>
+            <h3>Free, guided curriculum</h3>
+            <p>Twelve weeks of structured, project-based learning — at no cost to you.</p>
+          </article>
+          <article class="value-card" data-reveal>
+            <h3>Dedicated mentorship</h3>
+            <p>Small cohorts mean real, one-on-one attention whenever you're stuck.</p>
+          </article>
+          <article class="value-card" data-reveal>
+            <h3>A portfolio, not just a certificate</h3>
+            <p>Leave with real, shippable projects you can show employers or schools.</p>
+          </article>
+          <article class="value-card" data-reveal>
+            <h3>A lasting community</h3>
+            <p>Join a network of mentors and alumni who keep showing up for each other.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REGISTRATION FORM ============ -->
+    <section class="section section-alt" aria-labelledby="register-heading">
+      <div class="container container-narrow">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Apply now</p>
+          <h2 id="register-heading">Register for the Next Cohort</h2>
+          <p class="section-lede">Fill out the form below. Our team reviews applications on a rolling basis and replies within one week.</p>
+        </div>
+
+        <!--
+          NOTE FOR INTEGRATION:
+          This form currently redirects to confirmation.html on successful client-side validation.
+          Replace the form's "action" attribute (and remove the JS preventDefault in main.js's
+          handleRegistrationSubmit function) to point at Kitoko Hearth's existing registration
+          form endpoint, or keep this as a lightweight pre-screen before the full application.
+        -->
+        <form class="form-card" id="registration-form" data-reveal novalidate action="#" method="post">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="reg-first-name">First name</label>
+              <input type="text" id="reg-first-name" name="firstName" autocomplete="given-name" required>
+              <span class="form-error" id="reg-first-name-error" role="alert"></span>
+            </div>
+            <div class="form-field">
+              <label for="reg-last-name">Last name</label>
+              <input type="text" id="reg-last-name" name="lastName" autocomplete="family-name" required>
+              <span class="form-error" id="reg-last-name-error" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="reg-email">Email address</label>
+              <input type="email" id="reg-email" name="email" autocomplete="email" required>
+              <span class="form-error" id="reg-email-error" role="alert"></span>
+            </div>
+            <div class="form-field">
+              <label for="reg-age">Age</label>
+              <input type="number" id="reg-age" name="age" min="14" max="99" required>
+              <span class="form-error" id="reg-age-error" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="reg-experience">Prior coding experience</label>
+            <select id="reg-experience" name="experience" required>
+              <option value="">Select an option</option>
+              <option value="none">None — I'm brand new</option>
+              <option value="some">Some — I've tried a bit on my own</option>
+              <option value="intermediate">Intermediate — I've built small things before</option>
+            </select>
+            <span class="form-error" id="reg-experience-error" role="alert"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="reg-why">Why do you want to join Kitoko Hearth?</label>
+            <textarea id="reg-why" name="why" rows="4" required></textarea>
+            <span class="form-error" id="reg-why-error" role="alert"></span>
+          </div>
+
+          <div class="form-field form-field-checkbox">
+            <input type="checkbox" id="reg-consent" name="consent" required>
+            <label for="reg-consent">I confirm the information above is accurate and I'd like to be contacted about the Foundations Program.</label>
+            <span class="form-error" id="reg-consent-error" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Submit Application</button>
+          <p class="form-status" id="registration-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <svg class="logo-mark" width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M17 3C17 3 9 11.5 9 18.5C9 23.7 12.6 28 17 28C21.4 28 25 23.7 25 18.5C25 15.8 23.3 12.9 21.6 10.6C21.9 12.4 21.4 13.9 20.3 14.8C20.6 11.6 18.9 8.3 17 3Z" fill="url(#footerEmberGradient)"/>
+            <defs><linearGradient id="footerEmberGradient" x1="9" y1="3" x2="25" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#D89A2B"/><stop offset="1" stop-color="#F8F5F0"/></linearGradient></defs>
+          </svg>
+          <span class="logo-text logo-text-light">Kitoko Hearth</span>
+        </a>
+        <p class="footer-tagline">A home for young people to learn technology by building it.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="projects.html">Student Projects</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-links" aria-label="Footer get involved">
+        <h3>Get Involved</h3>
+        <ul>
+          <li><a href="join.html">Join Kitoko Hearth</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h3>Stay Connected</h3>
+        <a href="mailto:hello@kitokohearth.org" class="footer-email">hello@kitokohearth.org</a>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="#" aria-label="Kitoko Hearth on Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Kitoko Hearth on X"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+          <a href="#" aria-label="Kitoko Hearth on LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.6"/><circle cx="7.5" cy="7.5" r="1.2" fill="currentColor"/><path d="M7.5 11v7M12 11v7M12 13.5c0-1.5 1.2-2.5 2.5-2.5s2.5 1 2.5 2.5V18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year"></span> Kitoko Hearth. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
